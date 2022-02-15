@@ -1,0 +1,41 @@
+package main;
+
+import java.math.BigDecimal;
+
+import javax.persistence.EntityManager;
+
+import domein.Campus;
+import domein.Docent;
+import domein.Werkruimte;
+import util.JPAUtil;
+
+public class MAINoef4 {
+	public static void main(String[] args) {
+		Docent jan  = new Docent(123, "Jan", "Baard", new BigDecimal(8000));
+		Docent piet  = new Docent(456, "Piet", "Baard", new BigDecimal(10000));
+		Docent joris  = new Docent(789, "Joris", "ZonderBaard", new BigDecimal(12000));
+		Campus gent = new Campus("Gent");
+		Campus aalst = new Campus("Aalst");
+		
+		Werkruimte zolder = new Werkruimte("SCH123", "zolder", 12, 6);
+		Werkruimte kelder = new Werkruimte("SCH555", "kelder", 4, 4);
+		Werkruimte dak = new Werkruimte("AA222", "dak", 10, 2);
+		
+		EntityManager entitmanger = JPAUtil.getEntityManagerFactory().createEntityManager();
+		entitmanger.getTransaction().begin();
+		entitmanger.persist(jan);
+		entitmanger.persist(piet);
+		entitmanger.persist(joris);
+		entitmanger.persist(gent);
+		entitmanger.persist(aalst);
+		entitmanger.persist(zolder);
+		entitmanger.persist(kelder);
+		entitmanger.persist(dak);
+		entitmanger.getTransaction().commit();
+		entitmanger.close();
+		JPAUtil.getEntityManagerFactory().close();
+		
+
+	}
+
+}

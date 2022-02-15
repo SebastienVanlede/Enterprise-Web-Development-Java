@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/sebastienvanlede/Desktop/School/Software/jpaJARS/eclipselink.jar"/>
+	<classpathentry kind="lib" path="/Users/sebastienvanlede/Desktop/School/Software/jpaJARS/jakarta.persistence_2.2.3.jar"/>
+	<classpathentry kind="lib" path="/Users/sebastienvanlede/Desktop/School/Software/jpaJARS/jakarta.persistence.source_2.2.3.jar"/>
+	<classpathentry kind="lib" path="/Users/sebastienvanlede/Desktop/School/Software/jpaJARS/org.eclipse.persistence.jpa.modelgen_2.7.10.v20211216-fe64cd39c3.jar"/>
+	<classpathentry kind="lib" path="/Users/sebastienvanlede/Desktop/School/Software/jpaJARS/org.eclipse.persistence.jpa.modelgen.source_2.7.10.v20211216-fe64cd39c3.jar"/>
+	<classpathentry kind="lib" path="/Users/sebastienvanlede/Desktop/School/Software/jpaJARS/org.eclipse.persistence.jpars_2.7.10.v20211216-fe64cd39c3.jar"/>
+	<classpathentry kind="lib" path="/Users/sebastienvanlede/Desktop/School/Software/jpaJARS/org.eclipse.persistence.jpars.source_2.7.10.v20211216-fe64cd39c3.jar"/>
+	<classpathentry kind="lib" path="/Users/sebastienvanlede/Desktop/School/Software/mysql-connector-java-8.0.27.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

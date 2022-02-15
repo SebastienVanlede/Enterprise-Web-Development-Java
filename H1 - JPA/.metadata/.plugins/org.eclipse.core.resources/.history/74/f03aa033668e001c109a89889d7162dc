@@ -1,0 +1,12 @@
+package main;
+
+import util.JPAUtil;
+
+public class MAINoef2 {
+
+	public static void main(String[] args) {
+		EntityManager entityManager = JPAUtil.getEntityManagerFactory().createEntityManager();
+
+	}
+
+}
