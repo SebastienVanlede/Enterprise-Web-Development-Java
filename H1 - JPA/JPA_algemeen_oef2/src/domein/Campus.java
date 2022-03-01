@@ -11,8 +11,11 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 
 @Entity
+@NamedQueries({@NamedQuery(name = "Campus.findAll", query = "SELECT c FROM Campus c")})
 public class Campus implements Serializable{
 	
 	/**
@@ -25,7 +28,7 @@ public class Campus implements Serializable{
     private int campusID;
 	   
     private String campusNaam;
-    @ManyToMany(mappedBy = "campussen")
+    @ManyToMany(/*fetch=FetchType.EAGER , */mappedBy = "campussen")
     private final  Set<Docent> docenten = new HashSet<>();
     
     protected Campus() {
